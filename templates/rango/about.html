@@ -1,0 +1,14 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    {{ category.name }}
+{% endblock %}
+
+{% block body_block %}
+	<h1>About Page</h1>
+	This tutorial has been put together by Martin Nolan <br />
+	<img src="{{ MEDIA_URL}}cat.jpg" alt="Picture of a Cat" />
+	
+	<p>visits: {{ visits }}</p>
+{% endblock %}
